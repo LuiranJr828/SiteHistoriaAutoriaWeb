@@ -1,0 +1,159 @@
+* {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+}
+
+.barra1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.barra1 h1 {
+  margin-left: 5%;
+  font-size: 16px;
+}
+
+.barra1 div {
+  margin-right: 10%;
+  display: flex;
+}
+
+nav {
+  background-color: greenyellow;
+  padding: 15px;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav div a {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+main{
+    background-image: url('img/DevsImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 40px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.devs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.dev img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.info {
+  text-align: left;
+  font-size: 16px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.info-ifrn p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.alunos {
+  text-align: right;
+}
+
+.alunos p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+ifrnlogo{
+  width: 76px;
+  height: 100px;
+}

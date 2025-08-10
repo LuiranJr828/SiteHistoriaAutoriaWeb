@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    display: absolute;
+}
+
+.container{
+    display: relative;
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(black, gray);
+}
+
+nav{
+    background: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 45%;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    justify-content: center;
+    margin-top: -15%;
+    z-index: 10;
+}
+
+nav ul{
+    display: block;
+    list-style: none;
+}
+
+nav li{
+    margin: 0;
+    display: inline-block;
+    left: 50%;
+    padding: 15px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+    color: white;
+}
+
+.sub-menu-1{
+    display: none;
+    z-index: 20;
+}
+
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    top: 50px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: white;
+}
+
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+
+nav ul li:hover .sub-menu-1 ul li{
+    display: flex;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-menu-2{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+.hover-sub:hover .sub-menu-2{
+    display: block;
+}
+
+
+.txtBarraBt .btVerProdutos{
+    background: black;
+    border: 5px solid white;
+    font-size: large;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 15px;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.btVerProdutos:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btVerProdutos:not(:hover){
+    transform: scale(1.0);
+    transition: 0.3s;
+}
+
+.container2{
+    height: 75%;
+    position: relative;
+}
+
+.txtBarraBt{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 30%;
+    height: 40%;
+}
+
+.txtBarraBt:hover{
+    transform: translateY(-1%);
+    transition: 0.3s;
+}
+
+.txtBarraBt:not(:hover){
+    transform: translateY(1%);
+    transition: 0.3s;
+}
+
+.txtBarraBt .texto{
+    position: absolute;
+    left: 10%;
+    color: blueviolet;
+    font-size: xx-large;
+    width: 75%;
+}
+
+.txtBarraBt .barra{
+    position: absolute;
+    left: 3%;
+    background-color: blueviolet;
+    width: 4%;
+    height: 75%;
+}
+
+.container3{
+    position: absolute;
+    margin-top: 50%;
+    width: 100%;
+    height: 1000px;
+    background: rgb(255, 29, 29);
+    z-index: 1;
+}
